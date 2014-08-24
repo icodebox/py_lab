@@ -8,8 +8,6 @@ def cointoss():
 	else:
 		return "T"
 	
-
-
 def main():
 	
 	answer = 'y'
@@ -44,8 +42,5 @@ def main():
 		result = ''
 		flips-=1
 	print("Score: Player-"+str(Player)+" vs Beauty-"+str(Beauty))
-		
-		
 			
-	
 main()
