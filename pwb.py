@@ -28,21 +28,20 @@ def main():
 	while(flips > 0):
 		for i in range(2):
 			result=result+cointoss()
-		if(result == "HH"):
-			print (result, end=' ')
-		#	print("Player wins!")
-			Player+=1
-		elif(result == "TT"):
-			print (result, end=' ')
-		#	print("Player wins!")
-			Player+=1
-		else:
-			print (result, end=' ')
-		#	print("Beauty wins!")
-			Beauty+=1
-		result = ''
-		flips-=1
-	print (rlist)
+			if(result == "HH"):
+				print (result, end=' ')
+				#print("Player wins!")
+				Player+=1
+			elif(result == "TT"):
+				print (result, end=' ')
+				#print("Player wins!")
+				Player+=1
+			else:
+				print (result, end=' ')
+				#print("Beauty wins!")
+				Beauty+=1
+			result = ''
+			flips-=1
 	print("Score: Player-"+str(Player)+" vs Beauty-"+str(Beauty))
 
 	if(Player>Beauty):
